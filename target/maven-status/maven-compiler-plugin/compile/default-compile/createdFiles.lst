@@ -1,0 +1,4 @@
+Core\DriverManager.class
+Core\BaseTest.class
+Pages\NDTVHomePage.class
+Core\GlobalData.class

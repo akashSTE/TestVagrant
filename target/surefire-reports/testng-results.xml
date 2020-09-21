@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="16832" started-at="2020-09-22T01:18:01 IST" finished-at="2020-09-22T01:18:18 IST">
+    <groups>
+    </groups>
+    <test name="D:/DominosAuto/CoreV2/TestVagrant/src/test" duration-ms="16832" started-at="2020-09-22T01:18:01 IST" finished-at="2020-09-22T01:18:18 IST">
+      <class name="Phase1">
+        <test-method status="PASS" signature="initialiseSuite()[pri:0, instance:Phase1@4b168fa9]" name="initialiseSuite" is-config="true" duration-ms="5839" started-at="2020-09-22T01:17:55 IST" finished-at="2020-09-22T01:18:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseSuite -->
+        <test-method status="PASS" signature="initialiseObjects()[pri:0, instance:Phase1@4b168fa9]" name="initialiseObjects" is-config="true" duration-ms="16" started-at="2020-09-22T01:18:01 IST" finished-at="2020-09-22T01:18:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialiseObjects -->
+        <test-method status="PASS" signature="openNDTVWebPage()[pri:0, instance:Phase1@4b168fa9]" name="openNDTVWebPage" duration-ms="16788" started-at="2020-09-22T01:18:01 IST" finished-at="2020-09-22T01:18:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openNDTVWebPage -->
+      </class> <!-- Phase1 -->
+    </test> <!-- D:/DominosAuto/CoreV2/TestVagrant/src/test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
