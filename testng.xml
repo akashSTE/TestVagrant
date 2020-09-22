@@ -5,6 +5,7 @@
         <classes>
             <class name="Phase1"></class>
             <class name="Phase2"></class>
+            <class name="Phase3"></class>
         </classes>
     </test>
 </suite>

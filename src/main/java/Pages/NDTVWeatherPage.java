@@ -26,6 +26,15 @@ public class NDTVWeatherPage extends PageFunctions {
         return isDisplayed(parameterizedText(cityOnMapTempInC, cityName));
     }
 
+    public String getCityOnMapTempInC(String cityName){
+        return getText(parameterizedText(cityOnMapTempInC, cityName));
+    }
+
+    public String removeDegreeCelsius(String str){
+        int i =  str.indexOf("℃");
+        return str.substring(0,i);
+    }
+
     public boolean isCityOnMapTempInFehDisplayed(String cityName){
         return isDisplayed(parameterizedText(cityOnMapTempInF, cityName));
     }
@@ -40,5 +49,7 @@ public class NDTVWeatherPage extends PageFunctions {
         clickOnLocator(parameterizedText(cityOnMap, cityName));
         return isDisplayed(parameterizedText(cityOnMapWeatherDetails, cityName));
     }
+
+
 
 }

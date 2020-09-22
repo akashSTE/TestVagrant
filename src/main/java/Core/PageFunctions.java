@@ -83,12 +83,6 @@ public class PageFunctions {
         return element;
     }
 
-/*    protected ArrayList<WebElement> findElements(By loc){
-        ArrayList<WebElement> elements = new ArrayList<WebElement>();
-        elements = (ArrayList<WebElement>) driver.findElements(loc);
-        return elements;
-    }*/
-
     protected By parameterizedText(String loc, String... txt){
         return By.xpath(MessageFormat.format(loc,txt));
     }
@@ -126,6 +120,25 @@ public class PageFunctions {
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
+    }
+
+    protected String getText(By by) {
+        String value=null;
+        WebElement element;
+        try {
+            element=waitForVisibilityOfElement(by);
+            value=element.getText();
+        } catch (StaleElementReferenceException e) {
+            element=waitForVisibilityOfElement(by);
+            value=element.getText();
+        } catch (Exception e) {
+            Assert.fail(e.getMessage());
+        }
+        return value;
+    }
+
+    public void closeBrowserWindow(){
+        driver.close();
     }
 
 }

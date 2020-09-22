@@ -9,7 +9,6 @@ public class NDTVHomePage extends PageFunctions {
     private By subMenuButton = By.xpath("//a[@id='h_sub_menu']");
     private By weatherButton = By.xpath("//a[contains(text(),'WEATHER')]");
     private By noThanksPopUpButton = By.xpath("//a[contains(text(),'No Thanks')]");
-    //private By allElements = By.xpath("//*");
 
     public void clickOnSubMenuButton() {
         clickOnLocator(subMenuButton);
@@ -19,7 +18,7 @@ public class NDTVHomePage extends PageFunctions {
         clickOnLocator(weatherButton);
     }
 
-    public void clickOnNoThanksButton(){
+    public void clickOnNoThanksButton() {
         clickOnLocator(noThanksPopUpButton);
     }
 
